@@ -1,9 +1,8 @@
-VENDOR_PATH := vendor/dolby
+VENDOR_PATH := vendor/dlb
 
 PRODUCT_COPY_FILES += \
-        $(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/etc/permissions,system/etc/permissions) \
-	$(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/etc,system/etc) \
-	$(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/framework,system/framework)
+    $(call find-copy-subdir-files,*,$(VENDOR_PATH)/vendor,vendor) \
+    $(call find-copy-subdir-files,*,$(VENDOR_PATH)/system,system)
 
 PRODUCT_PACKAGES += \
     DsUI \
